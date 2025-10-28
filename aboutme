@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>1738-Alex's CV</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	
+	<link rel="stylesheet" href="css/layout.css" /> 
+</head>
+
+</head> 
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
+<body>
+
+<!--REMOVE ANY CLASS OBJECT WHICH YOU DO NOT USE TO STYLE YOUR FILE//-->
+
+    <main class= "main-style">
+	 <header class="page-header">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
+            <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
+                <h1>Alex Coyne</h1>
+                <p>Your next hire ? </p>
+            </div>
+        </header>
+	    <!-- You could style Main here if you wish-->
+        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+       
+    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="about-me container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <p> A bit about me my name is Alex I am 18 years old. I enjoy brit-rock music, Hozeir and Kneecapp. I play for Cula GAA club and Sallynoggin Football Club this shows that I can work as part of a team. I live in Sallynoggin  </p>
+                <div class="content">
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>I worked in Mcdonals from January 2024-2025. While there I worked as crew member and eventually as crew trainer</li>
+                     <li>I worked in Google for 4 weeks in the summer of 2023. While there I worked on a team to create a new app for the company</li>
+                     <li>As part of my 4th work experience programme I was able to shadow an indpent journalist for a week in november 2023  </li>
+                     <li> Here is a link to my CV   </li><a href="CV.pdf" download>  My CV </a> <!--Note I got this from w3schools-->
+                    </ul> 
+                <div class="content">
+                    <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
+                </div>
+            </div>
+        </section>
+			
+
+        <section id="images" class="image-gallery container">
+		
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+				
+<figure class="an-image">
+    <img src="webdesign3.jpeg" alt="suit image"width="100" height="150">
+  <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+     <figcaption class="image-caption"> Me on my first day of my intership at Google.I was so neverous I had got randomly selected in a draw to go hunders of people applied and I was so excited </figcaption>
+</figure>                   
+
+<figure class="an-image">
+    <img src="Screenshot 2025-10-23 133212.png" alt="suit image" width="100" height="150">
+    <figcaption class="image-caption"> Me at My Graducation from secondary school. It was oringally a photo with my favourite teacher but I thought it unprofessional to have him in in the photo   </figcaption>
+</figure> 
+
+				
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/f/xdkwqnnb" method="post">
+	                   
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p> 
+                        <p> 
+                            <label for="contact-email">Your Email </label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p> 
+                        <p> 
+                            <label for="contact-phone">Your Number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your Message </label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="send my message" /> </p>
+                    </form> 
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+              <p> &copy; <a href="https://loop.dcu.ie/user/profile.php?id=0/">DCU 2025-2026</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Alex Coyne</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is my coursework</span> 
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">My socails <a href="">@Alex_Coyner</a></span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="https://www.instagram.com/alex_coyner?igsh=MTVzNmczNDJyb21zcw==" title="Like and Follow" >DCU's biggest yapper </a><br/></span> 
+			</p>
+         
+        </footer>
+    </main>
+</body>
+
+</html>
